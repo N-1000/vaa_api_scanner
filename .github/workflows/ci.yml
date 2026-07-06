@@ -34,7 +34,7 @@ jobs:
 
     - name: Ejecutar Tests Unitarios (Pytest)
       run: |
-        pytest tests/unit/ -v
+        PYTHONPATH=. python -m pytest tests/unit/ -v
 
     - name: Validar dependencias (Safety)
       run: |
