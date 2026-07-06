@@ -28,7 +28,7 @@ class SimHash:
         v = [0] * hash_bits
         for token in tokens:
 
-            t_hash = int(hashlib.md5(token.encode('utf-8')).hexdigest(), 16)
+            t_hash = int(hashlib.md5(token.encode('utf-8'), usedforsecurity=False).hexdigest(), 16)
             for i in range(hash_bits):
                 bit = (t_hash >> i) & 1
                 if bit:
