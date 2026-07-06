@@ -9,7 +9,7 @@ Responsable de:
 
 import random
 import logging
-from typing import Dict
+from typing import Dict, Optional, Any
 
 logger = logging.getLogger("vaa.m5")
 
