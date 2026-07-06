@@ -10,6 +10,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+
     steps:
     - name: Checkout del código
       uses: actions/checkout@v4
@@ -27,15 +30,12 @@ jobs:
 
     - name: Análisis Estático de Seguridad (Bandit)
       run: |
-        # Revisa vulnerabilidades obvias en el código base (opcional pero muy recomendado)
         bandit -r app/ -ll -ii
 
     - name: Ejecutar Tests Unitarios (Pytest)
       run: |
-        # Corre los 320+ tests que construimos
         pytest tests/unit/ -v
 
     - name: Validar dependencias (Safety)
       run: |
-        # Verifica que ninguna librería en requirements.txt tenga CVEs conocidos
         safety check -r requirements.txt || true
