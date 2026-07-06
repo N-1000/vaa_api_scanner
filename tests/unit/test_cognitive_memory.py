@@ -59,7 +59,12 @@ async def test_init_pool_success(mock_settings, mock_create_pool, memory):
 async def test_close_pool(mock_create_pool, memory):
     memory.enabled = True
     memory.pool = AsyncMock()
-    
+    # Mock the keepalive task so cancel() doesn't touch a closed event loop
+    mock_task = MagicMock()
+    mock_task.cancel = MagicMock()
+    mock_task.__await__ = lambda s: iter([])
+    memory._keepalive_task = None  # disable it cleanly
+
     await memory.close_pool()
     memory.pool.close.assert_called_once()
 
