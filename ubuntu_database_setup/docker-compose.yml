@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  vaa_brain:
+    image: postgres:15-alpine
+    container_name: vaa_brain
+    restart: always
+    environment:
+      POSTGRES_USER: vaa
+      POSTGRES_PASSWORD: vaa_secret_change_me
+      POSTGRES_DB: lokitrace_memory
+    ports:
+      - "5432:5432"
+    volumes:
+      - vaa_postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U vaa -d lokitrace_memory"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  vaa_postgres_data:
+    driver: local

@@ -1,0 +1,68 @@
+{
+  "xss": {
+    "name": "Cross-Site Scripting (Reflejado)",
+    "impact": "Ejecución de scripts maliciosos. Riesgo de robo de sesión (cookies HttpOnly bypass vía exfiltración), phishing avanzado y keylogging.",
+    "remediation": "1. Escapar todo input de usuario en el contexto HTML/JS.\n2. Implementar Content Security Policy (CSP) estricta (nonce-based).\n3. Usar 'Trusted Types' en navegadores modernos.",
+    "severity": "Media/Alta"
+  },
+  "sqli": {
+    "name": "Inyección SQL (SQLi)",
+    "impact": "CRÍTICO. Acceso total a base de datos. Posible RCE en motores mal configurados. Exfiltración masiva de datos (PII).",
+    "remediation": "1. Usar siempre Consultas Parametrizadas (Prepared Statements) u ORMs modernos.\n2. Principio de Menor Privilegio para el usuario de BD.\n3. Deshabilitar funciones peligrosas (xp_cmdshell).",
+    "severity": "Alta/Crítica"
+  },
+  "csrf": {
+    "name": "Falsificación de Petición (CSRF)",
+    "impact": "Ejecución de acciones no autorizadas (cambio de email, transferencias).",
+    "remediation": "1. Configurar cookies con 'SameSite=Strict' o 'Lax'.\n2. Validar Tokens Anti-CSRF en toda petición de cambio de estado (POST/PUT/DELETE).\n3. Verificar cabecera 'Origin/Referer'.",
+    "severity": "Media"
+  },
+  "ssrf": {
+    "name": "Server-Side Request Forgery (SSRF)",
+    "impact": "Acceso a red interna, metadatos de nube (AWS IMDSv1) y posible RCE.",
+    "remediation": "1. Validar inputs contra lista blanca de dominios/IPs permitidas.\n2. Bloquear rangos de IP privados (10.0.0.0/8, 169.254.169.254) a nivel de firewall de salida.\n3. Forzar uso de IMDSv2 en AWS.",
+    "severity": "Alta"
+  },
+  "idor": {
+    "name": "IDOR / Broken Access Control",
+    "impact": "Acceso horizontal o vertical a datos de otros usuarios.",
+    "remediation": "1. Implementar controles de acceso (ABAC/RBAC) en CADA endpoint, no solo en frontend.\n2. Usar identificadores no secuenciales (UUIDv4) dificulta la enumeración pero no arregla el fallo de autorización.",
+    "severity": "Alta"
+  },
+  "sensitive_data_exposure": {
+    "name": "Exposición de Datos Sensibles (Secretos)",
+    "impact": "Compromiso de infraestructura (AWS, GCP) o servicios de terceros (Stripe, Slack).",
+    "remediation": "1. Revocar y rotar las credenciales expuestas INMEDIATAMENTE.\n2. Eliminar secretos del código fuente y usar Variables de Entorno o Vaults.\n3. Implementar escaneo de secretos pre-commit.",
+    "severity": "Crítica"
+  },
+  "rce": {
+    "name": "Ejecución Remota de Código (RCE)",
+    "impact": "CRÍTICO. Control total del servidor afectado. El atacante puede leer/escribir archivos arbitrarios, pivotar hacia la red interna, instalar backdoors persistentes y exfiltrar cualquier dato accesible desde el proceso comprometido.",
+    "remediation": "1. Nunca pasar input de usuario a funciones de ejecución de sistema (eval, exec, system, subprocess, Runtime.exec).\n2. Si se requiere ejecución de procesos externos, usar listas blancas estrictas de comandos y argumentos.\n3. Ejecutar el proceso del servidor con el menor privilegio posible (usuario sin shell, sin sudo).\n4. Implementar sandboxing a nivel de SO (seccomp, AppArmor, contenedores sin privilegios).",
+    "severity": "Crítica"
+  },
+  "xxe": {
+    "name": "XML External Entity Injection (XXE)",
+    "impact": "Lectura de archivos arbitrarios del servidor (/etc/passwd, claves privadas, configuraciones). En configuraciones con acceso de red, puede escalar a SSRF interno para alcanzar servicios no expuestos.",
+    "remediation": "1. Deshabilitar completamente el procesamiento de entidades externas en el parser XML (FEATURE_EXTERNAL_GENERAL_ENTITIES = false).\n2. Usar parsers modernos con configuración segura por defecto (defusedxml en Python, JAXP con secure processing en Java).\n3. Si el endpoint no requiere XML, rechazar Content-Type: application/xml con un 415 Unsupported Media Type.\n4. Validar el documento XML contra un schema (XSD) antes de procesarlo.",
+    "severity": "Alta/Crítica"
+  },
+  "path_traversal": {
+    "name": "Path Traversal / Directory Traversal",
+    "impact": "Lectura de archivos fuera del directorio raíz de la aplicación. En casos críticos, exposición de /etc/shadow, claves SSH, archivos .env con credenciales de base de datos o tokens de API, y código fuente de la aplicación.",
+    "remediation": "1. Resolver la ruta canónica (realpath) antes de cualquier operación de lectura y verificar que comience con el directorio base permitido.\n2. Nunca concatenar directamente input de usuario a rutas de archivo.\n3. Usar APIs de acceso a archivos que aíslen el contexto (chroot, contenedores, storage como S3).\n4. Implementar lista blanca de extensiones y nombres de archivo válidos si el endpoint sirve recursos estáticos.",
+    "severity": "Alta/Crítica"
+  },
+  "open_redirect": {
+    "name": "Open Redirect",
+    "impact": "Redirección de usuarios a dominios maliciosos bajo apariencia de un dominio confiable. Usado como vector de phishing, robo de tokens OAuth en el parámetro 'redirect_uri', y bypass de filtros de reputación de URLs.",
+    "remediation": "1. No construir URLs de redirección a partir de input del usuario.\n2. Si se requiere redirección parametrizada, usar un mapa interno de destinos válidos (whitelist por ID, no por URL).\n3. Validar que la URL de destino pertenezca al mismo origen o a una lista blanca de dominios explícita.\n4. En flujos OAuth, registrar y verificar redirect_uri exactos en el servidor de autorización.",
+    "severity": "Media"
+  },
+  "prompt_injection": {
+    "name": "Prompt Injection (LLM/GenAI)",
+    "impact": "Manipulación del comportamiento de un modelo de lenguaje integrado en la aplicación. Puede resultar en exfiltración del system prompt, bypass de controles de negocio, ejecución de acciones no autorizadas vía tool use / function calling, y violación de políticas de uso.",
+    "remediation": "1. Tratar todo input de usuario como datos, nunca como instrucciones. Separar explícitamente contexto de sistema y de usuario.\n2. Implementar validación de output del modelo antes de ejecutar cualquier acción derivada de su respuesta.\n3. Aplicar principio de menor privilegio a las herramientas (tools) disponibles para el modelo.\n4. Monitorear y loguear prompts e interacciones del modelo para detectar patrones de abuso.",
+    "severity": "Media/Alta"
+  }
+}

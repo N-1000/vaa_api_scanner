@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "vaa-discovery": {
+      "command": "python",
+      "args": [
+        "C:/Users/nl748/Documents/LokiTrace_Tools/LokiTrace_Tools/penetration_tester/vaa_api_scanner_rama1/tools/vaa_mcp_server.py"
+      ]
+    }
+  }
+}

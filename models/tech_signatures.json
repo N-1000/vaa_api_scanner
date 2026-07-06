@@ -1,0 +1,92 @@
+{
+    "php": {
+        "headers": {
+            "x-powered-by": "php"
+        },
+        "cookies": [
+            "PHPSESSID"
+        ]
+    },
+    "aspnet": {
+        "headers": {
+            "x-powered-by": "asp\\.net",
+            "server": "iis"
+        },
+        "cookies": [
+            "ASP\\.NET_SessionId",
+            "ASPSESSIONID"
+        ]
+    },
+    "java": {
+        "headers": {
+            "x-powered-by": "jsp|servlet"
+        },
+        "cookies": [
+            "JSESSIONID",
+            "JROUTE"
+        ]
+    },
+    "spring": {
+        "headers": {},
+        "cookies": [],
+        "body": [
+            "at org.springframework."
+        ],
+        "paths": [
+            "/actuator/env",
+            "/actuator/health",
+            "/v2/api-docs"
+        ]
+    },
+    "wordpress": {
+        "headers": {},
+        "cookies": [
+            "wp-settings",
+            "wordpress_test_cookie"
+        ],
+        "body": [
+            "wp-content/themes",
+            "wp-content/plugins"
+        ],
+        "paths": [
+            "/wp-admin",
+            "/wp-login.php",
+            "/xmlrpc.php"
+        ]
+    },
+    "node": {
+        "headers": {
+            "x-powered-by": "express|node"
+        },
+        "cookies": [
+            "connect\\.sid"
+        ]
+    },
+    "django": {
+        "headers": {},
+        "cookies": [
+            "csrftoken",
+            "sessionid"
+        ],
+        "body": [
+            "django.db.utils"
+        ],
+        "paths": [
+            "/admin/login/"
+        ]
+    },
+    "laravel": {
+        "headers": {},
+        "cookies": [
+            "laravel_session",
+            "XSRF-TOKEN"
+        ],
+        "body": [
+            "Illuminate\\\\Database"
+        ],
+        "paths": [
+            "/_debugger",
+            "/_ignition"
+        ]
+    }
+}

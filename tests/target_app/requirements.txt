@@ -1,0 +1,19 @@
+# VAA Cyber-range v2 - Python Dependencies (Local Installation)
+
+# Core Framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart>=0.0.6
+
+# Authentication & Security
+python-jose[cryptography]>=3.3.0
+bcrypt>=5.0.0
+
+# Rate Limiting
+slowapi>=0.1.9
+
+# Logging
+structlog>=23.0.0
+
+# HTTP Client
+httpx>=0.24.0

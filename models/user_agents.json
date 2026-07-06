@@ -1,0 +1,52 @@
+{
+    "_meta": {
+        "description": "User-Agent and JA3 Fingerprint Pool",
+        "updated": "2026-01-26"
+    },
+    "browsers": [
+        {
+            "id": "chrome_win",
+            "impersonate": "chrome120",
+            "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "platform": "win32",
+            "vendor": "Google Inc.",
+            "renderer": "Intel Iris OpenGL Engine"
+        },
+        {
+            "id": "safari_ios",
+            "impersonate": "safari17_2_ios",
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1",
+            "platform": "iPhone",
+            "vendor": "Apple Computer, Inc.",
+            "renderer": "Apple GPU"
+        },
+        {
+            "id": "edge_win",
+            "impersonate": "edge120",
+            "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edge/120.0.0.0",
+            "platform": "win32",
+            "vendor": "Google Inc.",
+            "renderer": "Intel Iris OpenGL Engine"
+        },
+        {
+            "id": "firefox_win",
+            "impersonate": "firefox120",
+            "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0",
+            "platform": "win32",
+            "vendor": "",
+            "renderer": "Intel Iris OpenGL Engine"
+        },
+        {
+            "id": "chrome_android",
+            "impersonate": "chrome120_android",
+            "ua": "Mozilla/5.0 (Linux; Android 13; SM-S918B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+            "platform": "Android",
+            "vendor": "Google Inc.",
+            "renderer": "Adreno (TM) 740"
+        }
+    ],
+    "default_viewport": {
+        "width": 1920,
+        "height": 1080
+    }
+}

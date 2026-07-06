@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "endpoint": "/lab/bola-int/{id}",
+    "method": "GET",
+    "category": "BOLA_INT",
+    "expected_label": "IDOR_CONFIRMED",
+    "must_detect": true,
+    "notes": "Integer BOLA - no ownership check"
+  },
+  {
+    "id": 2,
+    "endpoint": "/lab/bola-uuid/{uuid}",
+    "method": "GET",
+    "category": "BOLA_UUID",
+    "expected_label": "IDOR_CONFIRMED",
+    "must_detect": true,
+    "notes": "UUID BOLA - no ownership check"
+  },
+  {
+    "id": 3,
+    "endpoint": "/lab/xss-get",
+    "method": "GET",
+    "category": "XSS",
+    "expected_label": "CROSS-SITE SCRIPTING",
+    "must_detect": true,
+    "notes": "Reflected XSS via query param in HTML response"
+  },
+  {
+    "id": 4,
+    "endpoint": "/lab/xss-post",
+    "method": "POST",
+    "category": "XSS",
+    "expected_label": "CROSS-SITE SCRIPTING",
+    "must_detect": true,
+    "notes": "Reflected XSS via POST body in HTML response"
+  },
+  {
+    "id": 5,
+    "endpoint": "/lab/sqli-classic",
+    "method": "GET",
+    "category": "SQLI",
+    "expected_label": "SQL_INJECTION",
+    "must_detect": true,
+    "notes": "Classic SQLi - query param directly in SQL"
+  },
+  {
+    "id": 6,
+    "endpoint": "/lab/sqli-blind",
+    "method": "GET",
+    "category": "SQLI_BLIND",
+    "expected_label": "SQL_INJECTION",
+    "must_detect": true,
+    "notes": "Time-based blind SQLi via User-Agent header"
+  },
+  {
+    "id": 7,
+    "endpoint": "/lab/ssrf-basic",
+    "method": "GET",
+    "category": "SSRF",
+    "expected_label": "SSRF",
+    "must_detect": true,
+    "notes": "Basic SSRF - url param without validation"
+  },
+  {
+    "id": 8,
+    "endpoint": "/lab/ssrf-redirect",
+    "method": "GET",
+    "category": "SSRF",
+    "expected_label": "SSRF",
+    "must_detect": true,
+    "notes": "SSRF with redirect bypass - blocks localhost but follows 302"
+  },
+  {
+    "id": 9,
+    "endpoint": "/lab/rce-ping",
+    "method": "POST",
+    "category": "RCE",
+    "expected_label": "COMMAND_INJECTION",
+    "must_detect": true,
+    "notes": "RCE via ping with shell=True"
+  },
+  {
+    "id": 10,
+    "endpoint": "/lab/rce-dns",
+    "method": "POST",
+    "category": "RCE",
+    "expected_label": "COMMAND_INJECTION",
+    "must_detect": true,
+    "notes": "RCE via dns lookup admin-only endpoint"
+  },
+  {
+    "id": 11,
+    "endpoint": "/lab/mass-assign-pydantic",
+    "method": "PUT",
+    "category": "MASS_ASSIGNMENT",
+    "expected_label": "MASS_ASSIGNMENT",
+    "must_detect": true,
+    "notes": "Mass assignment via Pydantic model with sensitive field"
+  },
+  {
+    "id": 12,
+    "endpoint": "/lab/mass-assign-dict",
+    "method": "PUT",
+    "category": "MASS_ASSIGNMENT",
+    "expected_label": "MASS_ASSIGNMENT",
+    "must_detect": true,
+    "notes": "Mass assignment via raw dict - no schema filtering"
+  },
+  {
+    "id": 13,
+    "endpoint": "/lab/bfla",
+    "method": "GET",
+    "category": "BFLA",
+    "expected_label": "BFLA_VERTICAL",
+    "must_detect": true,
+    "notes": "BFLA - admin endpoint accessible with user token"
+  },
+  {
+    "id": 14,
+    "endpoint": "/lab/prompt-injection",
+    "method": "POST",
+    "category": "PROMPT_INJECTION",
+    "expected_label": "PROMPT_INJECTION",
+    "must_detect": true,
+    "notes": "Prompt injection - jailbreak leaks system secret"
+  },
+  {
+    "id": 15,
+    "endpoint": "/lab/safe-endpoint",
+    "method": "GET",
+    "category": "SAFE",
+    "expected_label": null,
+    "must_detect": false,
+    "notes": "Control - should produce ZERO findings (FP check)"
+  }
+]

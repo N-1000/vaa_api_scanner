@@ -1,0 +1,324 @@
+{
+    "success_patterns": [
+        "uid=[0-9]+",
+        "gid=[0-9]+",
+        "root:x:0:0",
+        "VAA_RCE_CONFIRMED",
+        "SUCCESS_RCE_VAA",
+        "VAA_DETECTED_INTROSPECTION",
+        "\"role\":\"admin\"",
+        "\"role\":\"superuser\"",
+        "\"isAdmin\":true",
+        "\"is_admin\":true",
+        "\"permissions\":[\"all\"]",
+        "\"password_hash\":\"",
+        "\"aws_access_key_id\":\"",
+        "\"stripe_secret_key\":\"",
+        "VAA_SSRF_CONFIRMED",
+        "SYSTEM_SECRET_KEY",
+        "VAA_AI_OVERRIDE_SUCCESS",
+        "VAA_BENCHMARK_PWNED",
+        "metadata_v1",
+        "export-users",
+        "alert(1)",
+        "confirm(1)",
+        "prompt(1)",
+        "alert`1`",
+        "confirm`1`",
+        "VAA_XSS_CONFIRMED",
+        "\"id\":101",
+        "\"id\":102",
+        "169.254.169.254",
+        "latest/meta-data",
+        "computeMetadata/v1",
+        "VAA_SSRF_CONFIRMED",
+        "sqlite_master",
+        "sqlite_version()",
+        "admin@target.local",
+        "user1@target.local",
+        "SUCCESS_RCE_VAA_BENCHMARK",
+        "nt authority\\system",
+        "Windows IP Configuration",
+        "Volume in drive",
+        "Directory of C:\\"
+    ],
+
+    "critical_errors": {
+        "mysql": [
+            "SQL syntax; check the manual",
+            "MySQL Error",
+            "mysqli_fetch_array",
+            "Warning: mysql_",
+            "You have an error in your SQL syntax",
+            "mysql_num_rows()",
+            "mysql_fetch_assoc()",
+            "mysql_fetch_row()",
+            "supplied argument is not a valid MySQL",
+            "Column count doesn't match value count",
+            "Operand should contain 1 column(s)",
+            "Unknown column",
+            "Duplicate entry",
+            "Data truncated for column",
+            "Incorrect integer value",
+            "Incorrect datetime value",
+            "Subquery returns more than 1 row",
+            "The used SELECT statements have a different number of columns",
+            "com.mysql.jdbc.exceptions"
+        ],
+        "postgresql": [
+            "PostgreSQL query failed:",
+            "pg_query(): Query failed:",
+            "PG::SyntaxError:",
+            "org.postgresql.util.PSQLException",
+            "ERROR:  syntax error at or near",
+            "pg_exec()",
+            "pg_query()",
+            "pg_num_rows()",
+            "unterminated quoted string",
+            "invalid input syntax for",
+            "column does not exist",
+            "relation does not exist",
+            "operator does not exist",
+            "function does not exist",
+            "division by zero",
+            "value too long for type",
+            "invalid byte sequence for encoding",
+            "could not determine data type"
+        ],
+        "oracle": [
+            "ORA-01756",
+            "ORA-00933",
+            "ORA-00936",
+            "ORA-00942",
+            "ORA-01789",
+            "ORA-00904",
+            "ORA-00907",
+            "ORA-00920",
+            "ORA-00923",
+            "ORA-01722",
+            "ORA-01858",
+            "Oracle Error",
+            "java.sql.SQLException: ORA-",
+            "oracle.jdbc.driver.OracleDriver"
+        ],
+        "mssql": [
+            "Unclosed quotation mark before the character string",
+            "Microsoft OLE DB Provider for SQL Server",
+            "System.Data.SqlClient.SqlException",
+            "Incorrect syntax near",
+            "ODBC SQL Server Driver",
+            "SQLServer JDBC Driver",
+            "com.microsoft.sqlserver.jdbc",
+            "Conversion failed when converting",
+            "Invalid column name",
+            "Invalid object name",
+            "Must declare the scalar variable",
+            "Arithmetic overflow error",
+            "String or binary data would be truncated",
+            "The multi-part identifier could not be bound"
+        ],
+        "sqlite": [
+            "SQLite3::SQLException",
+            "sqlite3.OperationalError",
+            "SQLITE_ERROR",
+            "unrecognized token",
+            "no such table",
+            "no such column",
+            "ambiguous column name",
+            "SELECTs to the left and right of UNION do not have the same number of result columns",
+            "incomplete input",
+            "near \"'\": syntax error",
+            "near \"OR\": syntax error"
+        ],
+        "mongodb": [
+            "MongoError:",
+            "MongoDB\\Driver\\Exception",
+            "com.mongodb.MongoException",
+            "MongoCommandException",
+            "MongoCursorException",
+            "MongoWriteException",
+            "BSONError",
+            "Invalid BSON field name"
+        ],
+        "redis": [
+            "WRONGTYPE Operation",
+            "ERR unknown command",
+            "redis.exceptions",
+            "NOAUTH Authentication required",
+            "ERR invalid password",
+            "WRONGPASS invalid username-password pair"
+        ],
+        "cassandra": [
+            "com.datastax.driver.core.exceptions",
+            "InvalidQueryException",
+            "SyntaxError:",
+            "Undefined column name"
+        ],
+        "couchdb": [
+            "bad_request",
+            "invalid_json",
+            "query_parse_error",
+            "no_db_file"
+        ]
+    },
+    "framework_errors": {
+        "django": [
+            "django.db.utils.ProgrammingError",
+            "django.core.exceptions",
+            "OperationalError at /",
+            "DoesNotExist at /",
+            "DETAIL:  Key"
+        ],
+        "laravel": [
+            "Illuminate\\Database\\QueryException",
+            "SQLSTATE[",
+            "Symfony\\Component\\Debug\\Exception",
+            "ErrorException in"
+        ],
+        "spring": [
+            "at org.springframework.",
+            "java.lang.NullPointerException",
+            "org.hibernate.exception",
+            "PreparedStatementCallback"
+        ],
+        "express": [
+            "Error: ER_PARSE_ERROR",
+            "at Query.Sequence._packetToError",
+            "node_modules/mysql/lib"
+        ],
+        "rails": [
+            "ActiveRecord::StatementInvalid",
+            "PG::UndefinedColumn:",
+            "Mysql2::Error:"
+        ],
+        "aspnet": [
+            "System.Data.SqlClient.SqlException",
+            "at System.Data.SqlClient",
+            "Server Error in '/' Application"
+        ]
+    },
+    "graphql_errors": [
+        "\"errors\":[{\"message\":",
+        "GraphQLError:",
+        "\"debugMessage\":",
+        "\"extensions\":{\"code\":",
+        "Cannot query field",
+        "Field \\\"__schema\\\" must not have a selection"
+    ],
+    "api_errors": [
+        "\"error\":\"Internal Server Error\"",
+        "\"status\":500",
+        "\"exception\":",
+        "\"trace\":[",
+        "\"file\":\"/app/",
+        "\"line\":"
+    ],
+    "debug_mode_indicators": [
+        "XDEBUG_SESSION",
+        "APP_DEBUG=true",
+        "DEBUG = True",
+        "development mode",
+        "Stack trace:",
+        "Whoops\\",
+        "Laravel\\Telescope",
+        "DebugBar",
+        "__NEXT_DATA__"
+    ],
+    "ldapi": [
+        "LDAPException",
+        "javax.naming.NameNotFoundException",
+        "IPWorksASP.LDAP",
+        "ldap_bind:",
+        "Invalid credentials"
+    ],
+    "xpath": [
+        "XPathException",
+        "System.Xml.XPath",
+        "SimpleXMLElement",
+        "libxml_use_internal_errors"
+    ],
+    "xxe": [
+        "<!ENTITY",
+        "XML parser error",
+        "SAXParseException",
+        "java.net.ConnectException",
+        "java.io.FileNotFoundException",
+        "System.Xml.XmlException"
+    ],
+    "path_traversal": [
+        "root:x:0:0",
+        "root:x:",
+        "daemon:x:",
+        "bin:x:",
+        "sys:x:",
+        "[extensions]",
+        "for 16-bit app support",
+        "[fonts]",
+        "[files]",
+        "[boot loader]",
+        "default=",
+        "[drivers]",
+        "[mci]",
+        "C:\\Windows\\System32",
+        "/etc/passwd",
+        "/etc/shadow",
+        "/etc/hosts",
+        "127.0.0.1",
+        "localhost",
+        "# /etc/hosts",
+        "/var/www/html",
+        "<?php",
+        "#!/bin/bash",
+        "#!/bin/sh"
+    ],
+    "generic_stack_trace": [
+        "Traceback (most recent call last)",
+        "File \"/app/",
+        "at org.springframework.",
+        "django.db.utils.ProgrammingError",
+        "    at ",
+        "Stack trace:",
+        "Caused by:"
+    ],
+    "information_disclosure": [
+        "phpinfo()",
+        "PHP Version",
+        "Server API",
+        "Loaded Configuration File",
+        "MySQL server version",
+        "PostgreSQL",
+        "Apache/",
+        "nginx/",
+        "X-Powered-By:",
+        "Server:"
+    ],
+    "severity_mapping": {
+        "critical": [
+            "mysql",
+            "postgresql",
+            "oracle",
+            "mssql",
+            "mongodb",
+            "path_traversal",
+            "xxe",
+            "ldapi"
+        ],
+        "high": [
+            "framework_errors",
+            "graphql_errors",
+            "api_errors",
+            "xpath"
+        ],
+        "medium": [
+            "debug_mode_indicators",
+            "generic_stack_trace"
+        ],
+        "low": [
+            "information_disclosure"
+        ]
+    },
+    "llm_leaks": [
+        "VAA_BENCHMARK_PWNED",
+        "VAA_AI_OVERRIDE_SUCCESS"
+    ]
+}

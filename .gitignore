@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+
+# Logs and Reports
+reports/
+logs/
+*.log
+
+# Pytest and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
+.pytest_cache
+cov.xml
+coverage.xml
+
+
+# Models & Persistent Memory
+models/memory/
+models/grammar/
+models/memory_archive/
+*.db
+*.sqlite3
+*.db.vaa
+
+# Environment Variables
+.env
+.env.local
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archivos de prueba personales / scripts internos
+test_token.py
+refresh.py
+demo_evasion.py
+agente.md
+python
+
+# Archivos HAR con trafico real (pueden contener tokens/emails)
+*.har
+tests/lab_wafu/
+
+# Salidas brutas de benchmark
+tests/lab_benchmark/last_benchmark_raw.txt
+tests/lab_benchmark/scanner_raw.txt
+tests/lab_benchmark/NEW
+tests/lab_benchmark/python
+
+# Herramientas de diagnostico internas
+tools/diagnostic/
+
+# Memoria del agente con datos de scans reales
+models/memory_archive/

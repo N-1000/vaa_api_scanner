@@ -1,0 +1,1567 @@
+{
+    "/v1/components/verify[componentId,siteId]": {
+        "path": "/v1/components/verify",
+        "seen_params": {
+            "componentId": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 7,
+                "subtype": "alphanumeric"
+            },
+            "siteId": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 24,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/[st]": {
+        "path": "/",
+        "seen_params": {
+            "st": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 3,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/v1/onelink[af_id]": {
+        "path": "/v1/onelink",
+        "seen_params": {
+            "af_id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 38,
+                "subtype": "text"
+            }
+        },
+        "methods": []
+    },
+    "/action/0[Ver,bo,cdb,evt,lg,lt,mid,msclkid,p,pi,rn,sc,sh,sid,sv,sw,ti,tl,vid,vids]": {
+        "path": "/action/0",
+        "seen_params": {
+            "ti": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 8,
+                "subtype": "alphanumeric"
+            },
+            "Ver": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "mid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            },
+            "bo": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "sid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vids": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "msclkid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "pi": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 9,
+                "subtype": "alphanumeric"
+            },
+            "lg": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "text"
+            },
+            "sw": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sh": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sc": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "tl": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 41,
+                "subtype": "text"
+            },
+            "p": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 39,
+                "subtype": "text"
+            },
+            "lt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "evt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 8,
+                "subtype": "alphanumeric"
+            },
+            "sv": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "cdb": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "rn": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/px/li_sync[redirect]": {
+        "path": "/px/li_sync",
+        "seen_params": {
+            "redirect": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 204,
+                "subtype": "text"
+            }
+        },
+        "methods": []
+    },
+    "/[dc,uid]": {
+        "path": "/",
+        "seen_params": {
+            "uid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 49,
+                "subtype": "text"
+            },
+            "dc": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/frontendevents/pv[client]": {
+        "path": "/frontendevents/pv",
+        "seen_params": {
+            "client": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            }
+        },
+        "methods": []
+    },
+    "/wa/[fmt,medium]": {
+        "path": "/wa/",
+        "seen_params": {
+            "medium": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            },
+            "fmt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/data/guide.json/a1c8b92f-44f8-442c-8752-458ca2e07835[ct,id,jzb,v]": {
+        "path": "/data/guide.json/a1c8b92f-44f8-442c-8752-458ca2e07835",
+        "seen_params": {
+            "id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "jzb": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 340,
+                "subtype": "text"
+            },
+            "v": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 15,
+                "subtype": "text"
+            },
+            "ct": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 13,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/saq_pxl[host,is_js,landing_url,sa-user-id,sa-user-id-v2,sa-user-id-v3,sa_conv_data_css_value,sa_conv_data_image_value,shop,t,tip,uid]": {
+        "path": "/saq_pxl",
+        "seen_params": {
+            "uid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 22,
+                "subtype": "alphanumeric"
+            },
+            "is_js": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "landing_url": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 74,
+                "subtype": "text"
+            },
+            "t": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 53,
+                "subtype": "text"
+            },
+            "tip": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 43,
+                "subtype": "alphanumeric"
+            },
+            "host": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 38,
+                "subtype": "text"
+            },
+            "sa_conv_data_css_value": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "text"
+            },
+            "sa_conv_data_image_value": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1302,
+                "subtype": "alphanumeric"
+            },
+            "shop": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            },
+            "sa-user-id-v3": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 132,
+                "subtype": "text"
+            },
+            "sa-user-id-v2": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 79,
+                "subtype": "text"
+            },
+            "sa-user-id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 88,
+                "subtype": "text"
+            }
+        },
+        "methods": []
+    },
+    "/js_tracking[host,shop,uid,url,v]": {
+        "path": "/js_tracking",
+        "seen_params": {
+            "url": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 99,
+                "subtype": "text"
+            },
+            "uid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 22,
+                "subtype": "alphanumeric"
+            },
+            "v": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "host": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 38,
+                "subtype": "text"
+            },
+            "shop": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/[utm_campaign]": {
+        "path": "/",
+        "seen_params": {
+            "utm_campaign": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 7,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/api/4507427363487826/envelope/[sentry_key,sentry_version]": {
+        "path": "/api/4507427363487826/envelope/",
+        "seen_params": {
+            "sentry_key": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "sentry_version": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/ns[c]": {
+        "path": "/ns",
+        "seen_params": {
+            "c": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            }
+        },
+        "methods": []
+    },
+    "/api/feature-config/config/dashboard-client[path,pathWithParams]": {
+        "path": "/api/feature-config/config/dashboard-client",
+        "seen_params": {
+            "path": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 23,
+                "subtype": "text"
+            },
+            "pathWithParams": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 23,
+                "subtype": "text"
+            }
+        },
+        "methods": []
+    },
+    "/v1/rgstr[ec,gz,k,sid,st,sv,t]": {
+        "path": "/v1/rgstr",
+        "seen_params": {
+            "k": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 50,
+                "subtype": "text"
+            },
+            "st": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 17,
+                "subtype": "text"
+            },
+            "sv": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "text"
+            },
+            "t": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 13,
+                "subtype": "alphanumeric"
+            },
+            "sid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            },
+            "ec": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "gz": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/action/0[Ver,bo,cdb,evt,ifm,lg,lt,mid,msclkid,p,pi,rn,sc,sh,sid,sv,sw,ti,tl,tm,vid,vids]": {
+        "path": "/action/0",
+        "seen_params": {
+            "ti": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 9,
+                "subtype": "alphanumeric"
+            },
+            "tm": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            },
+            "Ver": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "mid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            },
+            "bo": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "sid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vids": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "msclkid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "pi": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 9,
+                "subtype": "alphanumeric"
+            },
+            "lg": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "text"
+            },
+            "sw": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sh": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sc": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "tl": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 17,
+                "subtype": "text"
+            },
+            "p": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 41,
+                "subtype": "text"
+            },
+            "lt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 3,
+                "subtype": "alphanumeric"
+            },
+            "evt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 8,
+                "subtype": "alphanumeric"
+            },
+            "ifm": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "sv": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "cdb": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "rn": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/api/v2/rum[batch_time,dd-api-key,dd-evp-origin,dd-evp-origin-version,dd-request-id,ddsource,ddtags]": {
+        "path": "/api/v2/rum",
+        "seen_params": {
+            "ddsource": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 7,
+                "subtype": "alphanumeric"
+            },
+            "ddtags": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 109,
+                "subtype": "text"
+            },
+            "dd-api-key": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 35,
+                "subtype": "alphanumeric"
+            },
+            "dd-evp-origin-version": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "text"
+            },
+            "dd-evp-origin": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 7,
+                "subtype": "alphanumeric"
+            },
+            "dd-request-id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            },
+            "batch_time": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 13,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/s/66627[bidder_id,bidder_uuid]": {
+        "path": "/s/66627",
+        "seen_params": {
+            "bidder_id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            },
+            "bidder_uuid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 49,
+                "subtype": "text"
+            }
+        },
+        "methods": []
+    },
+    "/s/66627[_li_chk,bidder_id,bidder_uuid,previous_uuid]": {
+        "path": "/s/66627",
+        "seen_params": {
+            "bidder_id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            },
+            "bidder_uuid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 49,
+                "subtype": "text"
+            },
+            "_li_chk": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "previous_uuid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/saq_pxl[host,is_js,landing_url,sa-user-id,sa-user-id-v2,sa-user-id-v3,sa_conv_data_css_value,shop,t,tip,uid]": {
+        "path": "/saq_pxl",
+        "seen_params": {
+            "uid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 22,
+                "subtype": "text"
+            },
+            "is_js": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "landing_url": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 99,
+                "subtype": "text"
+            },
+            "t": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 79,
+                "subtype": "text"
+            },
+            "tip": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 43,
+                "subtype": "text"
+            },
+            "host": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 38,
+                "subtype": "text"
+            },
+            "sa_conv_data_css_value": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "text"
+            },
+            "shop": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            },
+            "sa-user-id-v3": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 132,
+                "subtype": "text"
+            },
+            "sa-user-id-v2": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 79,
+                "subtype": "text"
+            },
+            "sa-user-id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 88,
+                "subtype": "text"
+            }
+        },
+        "methods": []
+    },
+    "/action/0[Ver,bo,cdb,ec,en,evt,gc,gtm_tag_source,mid,msclkid,p,rn,sc,sh,sid,sw,ti,tpp,vid,vids]": {
+        "path": "/action/0",
+        "seen_params": {
+            "ti": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 8,
+                "subtype": "alphanumeric"
+            },
+            "Ver": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "mid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            },
+            "bo": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "sid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vids": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "msclkid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "gtm_tag_source": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "ec": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 16,
+                "subtype": "text"
+            },
+            "gc": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 3,
+                "subtype": "alphanumeric"
+            },
+            "tpp": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "en": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "p": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 59,
+                "subtype": "text"
+            },
+            "sw": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sh": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sc": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "evt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            },
+            "cdb": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "rn": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/action/0[Ver,bo,cdb,evt,lg,lt,mid,msclkid,p,pi,r,rn,sc,sh,sid,sv,sw,ti,tl,vid,vids]": {
+        "path": "/action/0",
+        "seen_params": {
+            "ti": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 8,
+                "subtype": "alphanumeric"
+            },
+            "Ver": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "mid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            },
+            "bo": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "sid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vids": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "msclkid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "pi": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 9,
+                "subtype": "alphanumeric"
+            },
+            "lg": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "text"
+            },
+            "sw": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sh": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sc": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "tl": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 79,
+                "subtype": "text"
+            },
+            "p": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 99,
+                "subtype": "text"
+            },
+            "r": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 56,
+                "subtype": "text"
+            },
+            "lt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "evt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 8,
+                "subtype": "alphanumeric"
+            },
+            "sv": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "cdb": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "rn": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/syfe-for-business/introduction[embed_domain,embed_type]": {
+        "path": "/syfe-for-business/introduction",
+        "seen_params": {
+            "embed_domain": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 30,
+                "subtype": "text"
+            },
+            "embed_type": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/syfe-advisory/private-wealth[embed_domain,embed_type]": {
+        "path": "/syfe-advisory/private-wealth",
+        "seen_params": {
+            "embed_domain": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 30,
+                "subtype": "text"
+            },
+            "embed_type": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/embed/EuTlQRsKoSw[enablejsapi,origin]": {
+        "path": "/embed/EuTlQRsKoSw",
+        "seen_params": {
+            "enablejsapi": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "origin": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 38,
+                "subtype": "text"
+            }
+        },
+        "methods": []
+    },
+    "/api/booking/event_types/lookup[embed_domain,embed_type,event_type_slug,profile_slug]": {
+        "path": "/api/booking/event_types/lookup",
+        "seen_params": {
+            "event_type_slug": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 14,
+                "subtype": "text"
+            },
+            "profile_slug": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 13,
+                "subtype": "text"
+            },
+            "embed_domain": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 30,
+                "subtype": "text"
+            },
+            "embed_type": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/youtubei/v1/log_event[alt]": {
+        "path": "/youtubei/v1/log_event",
+        "seen_params": {
+            "alt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/api/booking/experiments[locale,organization_uuid]": {
+        "path": "/api/booking/experiments",
+        "seen_params": {
+            "organization_uuid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 16,
+                "subtype": "alphanumeric"
+            },
+            "locale": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/api/booking/event_types/DEE7SDYNJETFK575/calendar/range[diagnostics,embed_domain,embed_type,range_end,range_start,scheduling_link_uuid,timezone]": {
+        "path": "/api/booking/event_types/DEE7SDYNJETFK575/calendar/range",
+        "seen_params": {
+            "timezone": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 14,
+                "subtype": "text"
+            },
+            "diagnostics": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            },
+            "range_start": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 10,
+                "subtype": "date"
+            },
+            "range_end": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 10,
+                "subtype": "date"
+            },
+            "embed_domain": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 30,
+                "subtype": "text"
+            },
+            "embed_type": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            },
+            "scheduling_link_uuid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 11,
+                "subtype": "text"
+            }
+        },
+        "methods": []
+    },
+    "/data/guide.js/4cfbcefc-fcf9-4b66-5dc6-9b0d81bb07a9[ct,id,jzb,v]": {
+        "path": "/data/guide.js/4cfbcefc-fcf9-4b66-5dc6-9b0d81bb07a9",
+        "seen_params": {
+            "id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "jzb": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 372,
+                "subtype": "text"
+            },
+            "v": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 15,
+                "subtype": "text"
+            },
+            "ct": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 13,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/action/0[Ver,bo,cdb,ec,el,en,evt,gc,gtm_tag_source,mid,msclkid,p,rn,sc,sh,sid,sw,ti,tpp,vid,vids]": {
+        "path": "/action/0",
+        "seen_params": {
+            "ti": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 8,
+                "subtype": "alphanumeric"
+            },
+            "Ver": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "mid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            },
+            "bo": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "sid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "vids": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "msclkid": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "gtm_tag_source": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "ec": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 12,
+                "subtype": "text"
+            },
+            "el": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 13,
+                "subtype": "text"
+            },
+            "gc": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 3,
+                "subtype": "alphanumeric"
+            },
+            "tpp": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "en": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "p": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 59,
+                "subtype": "text"
+            },
+            "sw": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sh": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "sc": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "evt": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            },
+            "cdb": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            },
+            "rn": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 6,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/data/ptm.gif/4cfbcefc-fcf9-4b66-5dc6-9b0d81bb07a9[ct,s,v]": {
+        "path": "/data/ptm.gif/4cfbcefc-fcf9-4b66-5dc6-9b0d81bb07a9",
+        "seen_params": {
+            "v": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 15,
+                "subtype": "text"
+            },
+            "ct": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 13,
+                "subtype": "alphanumeric"
+            },
+            "s": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 4,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/sites/651489[visitor_id]": {
+        "path": "/sites/651489",
+        "seen_params": {
+            "visitor_id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            }
+        },
+        "methods": []
+    },
+    "/recaptcha/enterprise/anchor[anchor-ms,ar,cb,co,execute-ms,hl,k,size,v]": {
+        "path": "/recaptcha/enterprise/anchor",
+        "seen_params": {
+            "ar": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "k": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 40,
+                "subtype": "alphanumeric"
+            },
+            "co": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "hl": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            },
+            "v": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 24,
+                "subtype": "text"
+            },
+            "size": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 9,
+                "subtype": "alphanumeric"
+            },
+            "anchor-ms": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            },
+            "execute-ms": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            },
+            "cb": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 12,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/en-hk[rp]": {
+        "path": "/en-hk",
+        "seen_params": {
+            "rp": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 2,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/frontendevents/dl[client]": {
+        "path": "/frontendevents/dl",
+        "seen_params": {
+            "client": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 36,
+                "subtype": "uuid"
+            }
+        },
+        "methods": []
+    },
+    "/api/1358243/envelope/[sentry_client,sentry_key,sentry_version]": {
+        "path": "/api/1358243/envelope/",
+        "seen_params": {
+            "sentry_version": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            },
+            "sentry_key": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 32,
+                "subtype": "alphanumeric"
+            },
+            "sentry_client": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 31,
+                "subtype": "text"
+            }
+        },
+        "methods": []
+    },
+    "/v2/websdksettings[app_id]": {
+        "path": "/v2/websdksettings",
+        "seen_params": {
+            "app_id": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 24,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/v1/t[data,position]": {
+        "path": "/v1/t",
+        "seen_params": {
+            "data": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 671,
+                "subtype": "text"
+            },
+            "position": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 1,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    },
+    "/api/users[user_id,username]": {
+        "path": "/api/users",
+        "seen_params": {
+            "user_id": {
+                "inconsistencies": [],
+                "type": "int",
+                "range": [
+                    123,
+                    123
+                ],
+                "constraints": [
+                    "non_negative"
+                ]
+            },
+            "username": {
+                "inconsistencies": [],
+                "type": "string",
+                "max_length": 5,
+                "subtype": "alphanumeric"
+            }
+        },
+        "methods": []
+    }
+}
