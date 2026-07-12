@@ -47,6 +47,12 @@ test_token.py
 refresh.py
 demo_evasion.py
 agente.md
+VAA_ENGINEERING_MANIFESTO.md
+developer_instructions.md
+security_rules.md
+system_prompt.md
+context.md
+cline_docs/
 python
 
 # Archivos HAR con trafico real (pueden contener tokens/emails)
